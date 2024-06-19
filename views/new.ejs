@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="/chats.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <div class="avatar">O</div>
+                <div class="user-info">
+                    <div class="user-name">Omkar Daswadkar</div>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search or start new chat">
+            </div>
+            
+                <div class="chat-list">
+                    <% for(let chat of chats){ %>
+                    <!-- <form action="/chats/new" method="GET"> -->
+                    <div class="chat-item" onclick="openChat('Alice')">
+                        <div class="avatar">A</div>
+                        <div class="chat-info">
+                            <div class="chat-name"><a href="/chats/<%=chat.from%>" ><%= chat.from %> </a></div>
+                            <div class="last-message"><%= chat.msg %></div>
+                        </div>
+                    </div>
+                    <!-- </form> -->
+                    <%  } %>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chat-header">
+                <div class="chat-title" id="chatTitle"><%= name %></div>
+            </div>
+            <div class="messages" id="messages">
+                <!-- Messages will appear here -->
+                 
+            </div>
+            <div class="message-input">
+                <input type="text" id="messageInput" placeholder="Type a message">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="/app.js"></script> -->
+</body>
+</html>
