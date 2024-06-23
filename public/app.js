@@ -1,4 +1,3 @@
-
 // script.js
 // Dummy data for chats
 const chats = {
