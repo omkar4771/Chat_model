@@ -77,11 +77,9 @@ body {
     cursor: pointer;
     background-color: #f6f6f6;
 }
-
 .chat-item:hover {
     background-color: #ebebeb;
 }
-
 .chat-info {
     display: flex;
     flex-direction: column;
