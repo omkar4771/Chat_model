@@ -33,7 +33,6 @@ body {
     background-color: #075e54;
     color: white;
 }
-
 .avatar {
     width: 40px;
     height: 40px;
@@ -45,7 +44,6 @@ body {
     font-weight: bold;
     margin-right: 10px;
 }
-
 .user-info {
     display: flex;
     flex-direction: column;
